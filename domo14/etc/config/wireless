@@ -1,0 +1,24 @@
+
+config wifi-device 'ra0'
+	option type 'ralink'
+	option mode '9'
+	option channel '1'
+	option txpower '100'
+	option ht '20+40'
+	option country 'FR'
+	option disabled '0'
+
+config wifi-iface
+	option device 'ra0'
+	option network 'lan'
+	option mode 'ap'
+	option key '12345678'
+	option ApCliEnable '1'
+	option ApCliSsid 'main'
+	option ApCliAuthMode 'WPAPSK'
+	option ApCliEncrypType 'TKIP'
+	option ApCliPassWord 'XXXXXXXXXXXXXXXXXXXXXXXXX'
+	option ssid 'WRTnode1'
+	option encryption 'psk2'
+
+
